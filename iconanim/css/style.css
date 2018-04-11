@@ -1,0 +1,544 @@
+*,
+:before,
+:after {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+input,
+select,
+button,
+textarea {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    font: inherit;
+    color: inherit;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #78CEC5;
+}
+
+a:hover {
+    color: #53928B;
+}
+
+body {
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 630px;
+    min-width: 320px;
+    margin: 0 auto;
+    color: #222;
+}
+
+html {
+    font: 100%/1.5 "Roboto", Verdana, sans-serif;
+    background-color: #fff;
+    -webkit-font-smoothing: antialiased;
+    width: 100%;
+    overflow: hidden-x;
+    text-align: center;
+}
+
+.dropdown,
+.trigger-anim {
+    border: 1px solid #c0c8c9;
+    border-radius: 4px;
+    padding: 10px;
+    outline: none;
+    margin: 0 10px;
+    background-color: transparent;
+}
+
+.dropdown--from,
+.dropdown--to,
+.dropdown--animate {
+    background-image: url("images/down_arrow.png");
+    background-image: url("images/down_arrow.svg?3"), none;
+    background-repeat: no-repeat;
+    background-size: 25px 20px;
+    background-position: right center;
+}
+
+h1 {
+    font-weight: 100;
+    margin: 0 auto;
+    line-height: 100px;
+}
+
+.site__title {
+    font-size: 90px;
+    color: #78CEC5;
+    cursor: default;
+}
+
+.site__header {
+    padding: 50px 10px 30px;
+}
+
+.form {
+    margin: 30px 0 30px;
+}
+
+#icon {
+    cursor: pointer;
+    margin-bottom: 10px;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: transparent;
+}
+
+.site__content {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.site__title > .title--icon {
+    transform: rotateZ(0deg);
+    -webkit-transform: rotateZ(0deg);
+    -moz-transform: rotateZ(0deg);
+    -o-transform: rotateZ(0deg);
+    -ms-transform: rotateZ(0deg);
+}
+
+.site__title:hover > .title--icon {
+    transform: rotateZ(-180deg);
+    -webkit-transform: rotateZ(-180deg);
+    -moz-transform: rotateZ(-180deg);
+    -o-transform: rotateZ(-180deg);
+    -ms-transform: rotateZ(-180deg);
+}
+
+.site__title > .title--icon,
+.site__title:hover > .title--icon {
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+}
+
+hr {
+    border: none;
+    margin: 10px 0 10px;
+    height: 1px;
+    background-color: #c0c8c9;
+    background-image: -webkit-linear-gradient(0deg, #fff, #c0c8c9, #fff);
+}
+
+.trigger-anim {
+    display: none;
+}
+
+.site__footer {
+    margin-top: 70px;
+}
+
+.footer-text,
+.sub-header {
+    font-size: 15px;
+    color: #999;
+}
+
+@media (max-width: 650px) {
+    body {
+        max-width: 380px;
+    }
+    hr {
+        margin: 20px 0 10px;
+    }
+    .form {
+        margin-bottom: 30px;
+    }
+    .note {
+        padding: 0 10px;
+    }
+    .dropdown,
+    #trigger-anim {
+        margin-bottom: 10px;
+        width: 190px;
+    }
+    .site__title {
+        font-size: 60px;
+    }
+    .site__header {
+        padding: 30px 10px;
+    }
+    .github-ribbon {
+        display: none;
+    }
+    .trigger-anim {
+        display: block;
+        margin: 10px auto;
+        border: 2px solid #78CEC5;
+        cursor: pointer;
+    }
+    #icon-info {
+        display: none;
+    }
+}
+
+#carbonads {
+    position: fixed;
+    display: block;
+    right: 0;
+    bottom: 0;
+    width: 320px;
+    background: #fff;
+    border: 1px solid #e7e7e7;
+    border-bottom: none;
+    font-size: 13.5px;
+    line-height: 17.5px;
+    padding: 0.9375rem 0.9375rem 0.5rem;
+}
+
+#carbonads a {
+    text-decoration: none;
+    color: #000;
+}
+
+.carbon-img,
+.carbon-text {
+    float: left;
+}
+
+.carbon-text {
+    display: block;
+    max-width: 50%;
+    text-align: left;
+    padding-bottom: 0.5rem;
+    padding-left: 0.9375rem;
+}
+
+.carbon-poweredby {
+    display: block;
+    color: #b1b1b1;
+    float: right;
+    font-size: .8em;
+}
+
+
+
+
+/*Code Display*/
+
+/*! CSS Used from: https://assets-cdn.github.com/assets/frameworks-29f21e31d44fd2c6858f04860799bc74.css */
+
+.pl-c1 {
+    color: #005cc5;
+}
+
+.pl-e,
+.pl-en {
+    color: #6f42c1;
+}
+
+.pl-ent {
+    color: #22863a;
+}
+
+.pl-k {
+    color: #d73a49;
+}
+
+.pl-s,
+.pl-pds {
+    color: #032f62;
+}
+
+code,
+pre {
+    font-family: monospace, monospace;
+    font-size: 1em;
+}
+
+::-webkit-input-placeholder {
+    color: inherit;
+    opacity: 0.54;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+ul,
+ol {
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+code {
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+    font-size: 12px;
+}
+
+pre {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+    font-size: 12px;
+}
+
+:-ms-input-placeholder {
+    color: #6a737d;
+}
+
+::-ms-input-placeholder {
+    color: #6a737d;
+}
+
+::placeholder {
+    color: #6a737d;
+}
+
+/*! CSS Used from: https://assets-cdn.github.com/assets/github-08c0695b372c4d0fadbe37f9e2300ed2.css */
+
+.markdown-body p,
+.markdown-body ul,
+.markdown-body ol,
+.markdown-body pre {
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+    padding-left: 2em;
+}
+
+.markdown-body ol ul {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.markdown-body li {
+    word-wrap: break-all;
+}
+
+.markdown-body li > p {
+    margin-top: 16px;
+}
+
+.markdown-body li + li {
+    margin-top: .25em;
+}
+
+.markdown-body code {
+    padding: 0.2em 0.4em;
+    margin: 0;
+    font-size: 85%;
+    background-color: rgba(27, 31, 35, 0.05);
+    border-radius: 3px;
+}
+
+.markdown-body pre {
+    word-wrap: normal;
+}
+
+.markdown-body .highlight {
+    margin-bottom: 16px;
+}
+
+.markdown-body .highlight pre {
+    margin-bottom: 0;
+    word-break: normal;
+}
+
+.markdown-body .highlight pre,
+.markdown-body pre {
+    padding: 16px;
+    overflow: auto;
+    font-size: 85%;
+    line-height: 1.45;
+    background-color: #f6f8fa;
+    border-radius: 3px;
+}
+
+@media print {
+    p {
+        page-break-inside: avoid;
+    }
+}
+
+
+/*! CSS Used from: https://assets-cdn.github.com/assets/frameworks-29f21e31d44fd2c6858f04860799bc74.css */
+
+.pl-e {
+    color: #6f42c1;
+}
+
+.pl-ent {
+    color: #22863a;
+}
+
+.pl-s,
+.pl-pds {
+    color: #032f62;
+}
+
+pre {
+    font-family: monospace, monospace;
+    font-size: 1em;
+}
+
+::-webkit-input-placeholder {
+    color: inherit;
+    opacity: 0.54;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+pre {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+    font-size: 12px;
+}
+
+:-ms-input-placeholder {
+    color: #6a737d;
+}
+
+::-ms-input-placeholder {
+    color: #6a737d;
+}
+
+::placeholder {
+    color: #6a737d;
+}
+
+/*! CSS Used from: https://assets-cdn.github.com/assets/github-08c0695b372c4d0fadbe37f9e2300ed2.css */
+
+.markdown-body pre {
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+
+.markdown-body pre {
+    word-wrap: normal;
+}
+
+.markdown-body .highlight pre {
+    margin-bottom: 0;
+    word-break: normal;
+}
+
+.markdown-body .highlight pre,
+.markdown-body pre {
+    padding: 16px;
+    overflow: auto;
+    font-size: 85%;
+    line-height: 1.45;
+    background-color: #f6f8fa;
+    border-radius: 3px;
+}
+
+
+ol li 
+{
+    padding-bottom: 35px;
+}
+
+.animationlist li
+{
+    padding-bottom: 2px;
+}
+/*! CSS Used from: https://assets-cdn.github.com/assets/frameworks-29f21e31d44fd2c6858f04860799bc74.css */
+
+.pl-c1 {
+    color: #005cc5;
+}
+
+.pl-en {
+    color: #6f42c1;
+}
+
+.pl-k {
+    color: #d73a49;
+}
+
+.pl-s,
+.pl-pds {
+    color: #032f62;
+}
+
+pre {
+    font-family: monospace, monospace;
+    font-size: 1em;
+}
+
+::-webkit-input-placeholder {
+    color: inherit;
+    opacity: 0.54;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+pre {
+    background: aliceblue;
+    padding: 10px;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+    font-size: 12px;
+}
+
+:-ms-input-placeholder {
+    color: #6a737d;
+}
+
+::-ms-input-placeholder {
+    color: #6a737d;
+}
+
+::placeholder {
+    color: #6a737d;
+}
+
+/*! CSS Used from: https://assets-cdn.github.com/assets/github-08c0695b372c4d0fadbe37f9e2300ed2.css */
+
+.markdown-body pre {
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+
+.markdown-body pre {
+    word-wrap: normal;
+}
+
+.markdown-body .highlight {
+    margin-bottom: 16px;
+}
+
+.markdown-body .highlight pre {
+    margin-bottom: 0;
+    word-break: normal;
+}
+
+.markdown-body .highlight pre,
+.markdown-body pre {
+    padding: 16px;
+    overflow: auto;
+    font-size: 85%;
+    line-height: 1.45;
+    background-color: #f6f8fa;
+    border-radius: 3px;
+}

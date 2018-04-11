@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name="viewport" content="initial-scale=1" />
+    <link rel='dns-prefetch' href='https://fonts.googleapis.com' />
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,400italic,700italic,700' rel='stylesheet' type='text/css'>
+
+    <title>Nimble Icon Animation</title>
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <link rel='stylesheet' href='css/style.css'>
+    <link rel='stylesheet' href='css/animationicon.css'>
+    <link rel='stylesheet' href='css/font-awesome.css'>
+</head>
+
+<body>
+
+    <div class='site__content'>
+        <form class='form'>
+            <select id='from' class='dropdown dropdown--from'>
+                <optgroup>
+                    <option value='fa-bars'>bars</option>
+                    <option value='fa-camera'>camera</option>
+                    <option value='fa-pencil'>pencil</option>
+                    <option value='fa-map-marker'>map-marker</option>
+                    <option value='fa-share'>share</option>
+                    <option value='fa-reply'>reply</option>
+                    <option value='fa-comment'>comment</option>
+                    <option value='fa-check'>check</option>
+                    <option value='fa-remove'>remove</option>
+                    <option value='fa-book'>book</option>
+                    <option value='fa-bank'>bank</option>
+                    <option value='fa-anchor'>anchor</option>
+                    <option value='fa-archive'>archive</option>
+                    <option value='fa-area-chart'>area-chart</option>
+                    <option value='fa-arrows'>arrows</option>
+                    <option value='fa-arrows-h'>arrows-h</option>
+                    <option value='fa-arrows-v'>arrows-v</option>
+                    <option value='fa-asterisk'>asterisk</option>
+                    <option value='fa-at'>at</option>
+                    <option value='fa-automobile'>automobile</option>
+                    <option value='fa-ban'>ban</option>
+                    <option value='fa-bank'>bank</option>
+                    <option value='fa-bar-chart'>bar-chart</option>
+                    <option value='fa-bar-chart-o'>bar-chart-o</option>
+                    <option value='fa-barcode'>barcode</option>
+                    <option value='fa-bars'>bars</option>
+                    <option value='fa-bed'>bed</option>
+                    <option value='fa-beer'>beer</option>
+                    <option value='fa-bell'>bell</option>
+                </optgroup>
+            </select>
+            <select id='to' class='dropdown dropdown--to'>
+                <optgroup>
+                    <option value='fa-arrow-left'>arrow-left</option>
+                    <option value='fa-arrow-right'>arrow-right</option>
+                    <option value='fa-arrow-up'>arrow-up</option>
+                    <option value='fa-arrow-down'>arrow-down</option>
+                    <option value='fa-asterisk'>asterisk</option>
+                    <option value='fa-book'>book</option>
+                    <option value='fa-pencil'>pencil</option>
+                    <option value='fa-camera'>camera</option>
+                    <option value='fa-archive'>archive</option>
+                    <option value='fa-area-chart'>area-chart</option>
+                    <option value='fa-arrows'>arrows</option>
+                    <option value='fa-arrows-h'>arrows-h</option>
+                    <option value='fa-arrows-v'>arrows-v</option>
+                    <option value='fa-at'>at</option>
+                    <option value='fa-automobile'>automobile</option>
+                    <option value='fa-ban'>ban</option>
+                    <option value='fa-bank'>bank</option>
+                    <option value='fa-barcode'>barcode</option>
+                    <option value='fa-bars'>bars</option>
+                    <option value='fa-bed'>bed</option>
+                    <option value='fa-beer'>beer</option>
+                    <option value='fa-bell'>bell</option>
+                </optgroup>
+            </select>
+            <select id='animate' class='dropdown dropdown--animate'>
+                <optgroup>
+                    <option value='zoomOut'>zoomOut</option>
+                    <option value='zoomIn'>zoomIn</option>
+                    <option value='fadeOut'>fadeOut</option>
+                    <option value='fadeOutRight'>fadeOutRight</option>
+                    <option value='fadeOutLeft'>fadeOutLeft</option>
+                    <option value='fadeOutTop'>fadeOutTop</option>
+                    <option value='fadeOutBottom'>fadeOutBottom</option>
+                    <option value='rollOutRight'>rollOutRight</option>
+                    <option value='rollOutLeft'>rollOutLeft</option>
+                    <option value='tada'>tada</option>
+                    <option value='rubberBand'>rubberBand</option>
+                    <option value='horizontalFlip'>horizontalFlip</option>
+                    <option value='verticalFlip'>verticalFlip</option>
+                    <option value='bounceOutBottom'>bounceOutBottom</option>
+                    <option value='bounceOutTop'>bounceOutTop</option>
+                    <option value='bounceOutLeft'>bounceOutLeft</option>
+                    <option value='bounceOutRight'>bounceOutRight</option>
+                    <option value='rotateClockwise'>rotateClockwise</option>
+                    <option value='rotateAntiClockwise'>rotateAntiClockwise</option>
+                </optgroup>
+            </select>
+        </form>
+        <i id='icon' class='fa fa-3x fa-bars'></i>
+        <div id='icon-info' style="margin-bottom: 29px;">
+            <small>Click icon for Preview</small>
+        </div>
+        <button class='trigger-anim'>Animate</button>
+    </div>
+
+
+    <ol style="text-align: left">
+        <li>
+            <p>Include the Stylesheet and Javascript files in your html.</p>
+            <div class="highlight highlight-text-html-basic">
+                <pre>&lt;<span class="pl-ent">link</span> <span class="pl-e">rel</span>=<span class="pl-s"><span class="pl-pds">"</span>stylesheet<span class="pl-pds">"</span></span> <span class="pl-e">href</span>=<span class="pl-s"><span class="pl-pds">"</span>animationicon.css<span class="pl-pds">"</span></span>&gt;
+&lt;<span class="pl-ent">script</span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">"</span>text/javascript<span class="pl-pds">"</span></span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">"</span>animationicon.js<span class="pl-pds">"</span></span>&gt;<span class="pl-s1"></span></pre>
+            </div>
+        </li>
+        <li>
+            <p>Create icon element.</p>
+            <div class="highlight highlight-text-html-basic">
+                <pre>&lt;<span class="pl-ent">i</span> <span class="pl-e">id</span>=<span class="pl-s"><span class="pl-pds">"</span>icon<span class="pl-pds">"</span></span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span> fa fa-bars fa-lg<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">i</span>&gt;</pre>
+            </div>
+        </li>
+        <li>
+            <p>Animate icon from <code>fa-bar</code> to <code>fa-arrow-right</code> with <code>rubberBand</code> animation.</p>
+            <div class="highlight highlight-source-js">
+                <pre><span class="pl-k">var</span> iconitems <span class="pl-k">=</span> <span class="pl-c1">document</span>.<span class="pl-c1">getElementById</span>(<span class="pl-s"><span class="pl-pds">'</span>icon<span class="pl-pds">'</span></span>);
+<span class="pl-k">var</span> settings <span class="pl-k">=</span> {
+    from<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span><span id="iconfrom">fa-bars</span><span class="pl-pds">'</span></span>,
+    to<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span><span id="iconto">fa-arrow-right</span><span class="pl-pds">'</span></span>,
+    animation<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span><span id="iconanimationtitle">rubberBand</span><span class="pl-pds">'</span></span>
+};
+
+<span class="pl-en">nimbleicon</span>(iconElement, options);</pre>
+            </div>
+        </li>
+        <li>
+            <p>Following AnimationTypes can be used in iconate call.</p>
+            <ul class="animationlist">
+                <li><code>rollOutRight</code></li>
+                <li><code>rollOutLeft</code></li>
+                <li><code>rubberBand</code></li>
+                <li><code>zoomOut</code></li>
+                <li><code>zoomIn</code></li>
+                <li><code>fadeOut</code></li>
+                <li><code>fadeOutRight</code></li>
+                <li><code>fadeOutLeft</code></li>
+                <li><code>fadeOutTop</code></li>
+                <li><code>fadeOutBottom</code></li>
+                <li><code>horizontalFlip</code></li>
+                <li><code>verticalFlip</code></li>
+                <li><code>bounceOutBottom</code></li>
+                <li><code>bounceOutTop</code></li>
+                <li><code>bounceOutLeft</code></li>
+                <li><code>bounceOutRight</code></li>
+                <li><code>rotateClockwise</code></li>
+                <li><code>rotateAntiClockwise</code></li>
+                <li><code>tada</code></li>
+            </ul>
+        </li>
+    </ol>
+
+    <script type='text/javascript' src='js/animationicon.js'></script>
+    <script type='text/javascript' src='js/index.js'></script>
+
+</body>
+
+</html>
